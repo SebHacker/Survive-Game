@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+
+h3, h2{
+  margin:15px;
+  text-align: center;
+}
+h4{
+  margin:0px 15px;
+}
+
+.game-settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#game-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px; 
+}
+
+.instructions{
+margin:60px 0 20px;
+}
+
+.game-body{
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+}
+
+.how-to{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#ongoing-game-infos{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center; */
+  margin: auto 50px; 
+  float:right;
+  text-align: start;
+  display:flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+  height: 670px;
+  background: #d4cfb7;
+  color: #2c2916;
+  z-index: 100;
+  width: 320px;
+  position: relative;
+  transition: left .4s linear;
+  left:-240px; 
+  margin-left: 0px; 
+}
+
+#btn-lunch-the-game{
+
+  width: 150px;
+  height :40px;
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  
+}
+
+#btn-lunch-the-game:hover{
+  font-size: 25px;
+  color:  #d4cfb7;
+  box-shadow: 5px 5px 10px black;
+}
+
+#level-select-box{
+  width: 150px;
+  height :40px;
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  margin-bottom: 15px;
+}
+
+#level-selection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: solid #2c2916;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.how-to{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #2c2916;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+/* #heart:hover {
+  font-size: 2rem;
+  color: red;
+} */
+
+#sidebar.is-active {
+  left: 0;
+}
+
+#btn-settings {
+  /* pointer-events: none; */
+  /* height: 50px;
+  width: 50px; */
+  margin: 17px 0;
+  font-size: 40px;
+  color:  #d4cfb7;
+  margin-left:10px;
+  /* column-fill: #d4cfb7; */
+}
+
+
+#sidebar.is-active {
+  left: 0;
+}
+
+.game-info{
+  margin: 10px;
+}
+
+#playing-area{
+  width: 1900px;
+  height: 650px;
+  border: 10px solid #d4cfb7;
+  /* margin: 30px auto 0; */
+  margin-right: 50px;
+  /* box-shadow: 5px 5px 10px grey; */
+  overflow: hidden;
+  /* background: black; */
+  background-image: url("../img/Steel-Division-03.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+.the-game{
+  margin: 20px 0px 10px 0px;;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.player{
+  width:50px;
+  height:50px;
+  position: absolute;
+  /* background:red; */
+  /* background: url("../img/American_sherman_move_forward.gif"); */
+  /* to be updated with real avatars  */
+}
+
+.laser{
+  width:5px;
+  height:5px;
+  background:red;
+  position:absolute;
+}
+
+.enemy{
+  width: 20px;
+  height: 20px;
+  background: blue;
+  position: absolute;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* opacity: 0.2; */
+  background: rgba(65, 60, 60, 0.5);
+  /* padding:5rem; */
+  /* margin:10rem; */
+  border: solid #d4cfb7;
+  border-radius: 5px;
+  top: 50%;
+  left:50%;
+}
+
+.btn{
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  margin:10px 20px;
+}
+
+.game-over{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: url(../img/military\ death.jpg);
+  width:400px;
+  height: 400px;
+  background-size: cover;
+  border: solid #d4cfb7;
+  border-radius: 5px;
+  top: 40%;
+  left:40%;
+}
+
+.game-over.modal-title{
+  margin-top : 300px;
+}
+
+.modal-title{
+  text-align: center;
+}
